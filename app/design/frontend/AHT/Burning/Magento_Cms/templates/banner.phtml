@@ -1,0 +1,143 @@
+
+<?php
+
+echo $block->getLayout()
+
+           ->createBlock('Magento\Cms\Block\Block')
+
+           ->setBlockId('banner-slider')
+
+           ->toHtml();
+
+?>
+
+<!-- <div id="demoabc">
+ 
+    <div id="abc" class="owl-carousel">
+ 
+        <div class="item"><h1>1</h1></div>
+        <div class="item"><h1>2</h1></div>
+ 
+    </div>
+ 
+</div>
+-->
+<script>
+    require([
+        'jquery',
+        'owlcarouseldemo',
+    ], function ($) {
+        jQuery(document).ready(function () {
+            jQuery("#abc").owlCarousel({
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:1
+                    }
+                }             
+            });
+        });
+    });
+</script>
+
+
+<!-- 
+<p>def</p>
+<div id="demodef">
+ 
+    <div id="def" class="owl-carousel">
+ 
+        <div class="item"><h1>1</h1></div>
+        <div class="item"><h1>2</h1></div>
+ 
+    </div>
+ 
+</div>
+ -->
+
+<!-- $this->getViewFileUrl('Magento_Newsletter::images/envelope.png'); -->
+
+<script>
+    require([
+        'jquery',
+        'owlcarouseldemo',
+    ], function ($) {
+        jQuery(document).ready(function () {
+            jQuery("#def").owlCarousel({
+                nav:true,
+                navText: ["<img src='<?php echo $block->getViewFileUrl('images/pre.png'); ?>'>", "<img src='<?php echo $block->getViewFileUrl('images/next.png'); ?>'>"],
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:4
+                    }
+                }             
+            });
+        });
+    });
+</script> 
+
+<!-- navText: ["<img src='https://img.icons8.com/2266EE/search'>",
+                            "<img src='https://img.icons8.com/2266EE/search'>"], -->
+
+<!-- <div id="demoxyz">
+ 
+    <div id="home-banners" class="owl-carousel">
+ 
+        <div class="item"><h1>1</h1></div>
+        <div class="item"><h1>2</h1></div>
+ 
+    </div>
+ 
+</div>
+
+
+<script>
+    require([
+        'jquery',
+        'slick.min'
+    ], function ($) {
+        jQuery(document).ready(function () {
+            jQuery("#home-banners").slick({
+                dots: true,
+                infinite: true,
+                arrows: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+        });
+    });
+</script>  -->
+<!-- <div class="your-class">
+    <div>your content</div>
+    <div>your content</div>
+    <div>your content</div>
+</div> -->
+
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4
+      });
+    });
+  </script> -->

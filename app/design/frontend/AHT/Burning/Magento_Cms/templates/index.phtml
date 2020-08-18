@@ -1,0 +1,66 @@
+<!-- <h1>abc</h1> -->
+
+<?php
+
+echo $block->getLayout()
+
+    ->createBlock('Magento\Cms\Block\Block')
+
+    ->setBlockId('2-tiles')
+
+    ->toHtml();
+
+?>
+
+<div class="reason-to-buy">
+    <p class="cl-white">OUTDOOR FURNiTURE CLEARRANCE STORE</p>
+    <p class="cl-white">WE SHIP AUSTRALIA WIDE</p>
+    <p class="cl-white">30 DAY MONEY BACK GUARANTEE</p>
+</div>  
+
+<?php 
+
+echo $block->getLayout()
+
+    ->createBlock('Magento\Cms\Block\Block')
+
+    ->setBlockId('banner')
+
+    ->toHtml();
+
+?>
+
+<div class="parent">
+    <div class="child-1">
+        <!-- <div>
+        <img class="pd-bottom-30" src="assets/images/banner_1.png" alt="">
+        </div>   
+        -->
+        <h2 class="pd-bottom-10">Vogue</h2>  
+        <p class="pd-bottom-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nulla! Assumenda dignissimos harum, molestias iure repudiandae ratione praesentium. Illo facilis et velit ut quam omnis, porro molestiae magni, laboriosam ipsa.</p>
+        <div class="pd-bottom-30">
+        <button class="btn-shop">Shop now ></button>
+        </div>              
+    </div>
+    <div class="child-2">
+        <h2 class="pd-bottom-10">Vogue</h2>  
+        <p class="pd-bottom-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nulla! Assumenda dignissimos harum, molestias iure repudiandae ratione praesentium. Illo facilis et velit ut quam omnis, porro molestiae magni, laboriosam ipsa.</p>
+        <div class="pd-bottom-30">
+        <button class="btn-shop">Shop now ></button>
+        </div>              
+    </div>
+    <div class="child-3">
+        <h2 class="pd-bottom-10">Vogue</h2>  
+        <p class="pd-bottom-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nulla! Assumenda dignissimos harum, molestias iure repudiandae ratione praesentium. Illo facilis et velit ut quam omnis, porro molestiae magni, laboriosam ipsa.</p>
+        <div class="pd-bottom-30">
+        <button class="btn-shop">Shop now ></button>
+        </div>              
+    </div>
+</div>
+
+<!-- <style>
+  .icon-star:before { content: "★ "; }
+</style>
+
+<span><span class="icon-star" aria-hidden="true"></span>Favorite</span> -->
+

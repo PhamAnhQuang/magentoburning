@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="main">
+            <block class="Magento\Framework\View\Element\Template" name="main.home.banner" template="Magento_Cms::banner.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="main.home.tiles" template="Magento_Cms::index.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="main.home.bannercatalogues" template="Magento_Cms::banner_catalogues.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="main.home.bestsellers" template="Magento_Cms::best_sellers.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
